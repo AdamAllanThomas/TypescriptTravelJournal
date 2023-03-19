@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./components/Header";
+import Card from "./components/Card";
+import data from "./data";
 
-function App() {
+interface CardProps {
+  imageUrl: string;
+  location: string;
+  googleMapsUrl: string;
+  title: string;
+  startDate: string;
+  endDate: string;
+  description: string;
+}
+
+export default function App(): JSX.Element {
+  const cards: JSX.Element[] = data.map((item: CardProps) => (
+    <Card key={item.startDate} {...item} />
+  ));
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      {cards}
     </div>
   );
 }
-
-export default App;

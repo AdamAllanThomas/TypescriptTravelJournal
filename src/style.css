@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+.headerbar{
+    display: flex;
+    height: 55px;
+    background: #F55A5A;
+    justify-content: center;
+    padding-top: 20px
+}
+.headerlogo{
+    height: 17px;
+    width: 17px;
+    margin-right: 7px;
+}
+.headertext{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.4608px;
+    line-height: 18px;
+    letter-spacing: -0.075em;
+    color: #FFFFFF;
+}
+.card{
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    border-bottom: 1px solid #F5F5F5;
+}
+.cardtext{
+    padding-left: 20px;
+}
+.pinimg{
+    width: 7px;
+    height: 9.55px;
+}
+.cardimage{
+    width: 125px;
+    height: 168px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.locationtext{
+    display: flex;
+    padding-top: 20px;
+}
+
+.countryimgt{
+    display: flex;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 12px;
+    letter-spacing: 0.17em;
+    color: #2B283A;    
+}
+.pinimg{
+    margin-right: 4px;
+}
+.gmapurl{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 12px;
+    color: #918E9B;
+    margin-left: 12px;
+}
+.triptitle{
+    padding-top: 4px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #2B283A;
+}
+.dates{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10.24px;
+    line-height: 12px;
+    color: #2B283A;
+    padding-top: 7px;
+}
+.description{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 150%;
+    color: #2B283A;
+}
